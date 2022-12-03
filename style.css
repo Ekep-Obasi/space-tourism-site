@@ -1,0 +1,100 @@
+/* viewport style */
+*{
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/home/background-home-desktop.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+/* navigation bar style */
+.header-section{
+  margin: auto;
+  margin-top: 30px;
+  height: 10vh;
+  position: fixed;
+}
+.navigation-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.nav-links{
+  flex: 2;
+  position: relative;
+  background: inherit;
+  backdrop-filter: blur(20px);
+}
+.nav-links ul{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 50px;
+}
+.nav-links li{
+  padding: 1.1rem ;
+  list-style: none;
+  border-bottom: 2px solid transparent;
+}
+.nav-links li:hover{
+  border-bottom: 2px solid white;
+  transition: 2s;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: white;
+}
+.logo{
+margin-left: 50px;
+}
+.liner{
+  min-width: 650px ;
+  opacity: 0.15;
+}
+/* content style */
+.main-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  margin-top: 29vh;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  width:400px ;
+  text-align:justify;
+}
+.article h1{
+  font-size: 8.35rem;
+  margin: 0;
+  font-weight: 10;
+}
+.article h4{
+  font-size: 1.35rem;
+  font-weight: 10;
+}
+.article p{
+  line-height: 1.5rem;
+}
+.circle{
+  width:220px;
+  height: 220px;
+  background-color: white;
+  border-radius: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+.circle h4{
+  color: black;
+  font-size: 1.75rem;
+}
